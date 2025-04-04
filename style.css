@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --background: rgb(24, 24, 24);
+    --second-background: rgb(21, 21, 21);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+    padding-top: 3em;
+    padding-bottom: 5em; /* Add padding to account for the footer height */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em 10%; /* Reduced padding for a more compact navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+nav ul a {
+    color: white;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul a:hover {
+    opacity: 1;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.btn {
+    padding: 0.5em 1.5em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--background);
+}
+
+span {
+    background: linear-gradient(120deg, #d500f9, #00e5ff);
+    background-clip: text;
+    color: transparent;
+}
+
+#menu {
+    color: white;
+    font-size: 3em;
+    display: none;
+}
+
+@media (max-height: 768px) {
+    #home {
+        gap: 1.5em;
+    }
+    #home img {
+        margin-top: 1em;
+    }
+    section {
+        height: auto;
+        padding: 5% 10%;
+    }
+}
+
+section {
+    height: auto; /* Allow sections to adjust height dynamically */
+    padding: 4% 10%; /* Reduced padding for better content fitting */
+    padding-bottom: 5em; /* Add bottom padding to prevent overlap with footer */
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em; /* Reduced gap between elements */
+    color: white;
+    padding-top: em; /* Add padding to account for the fixed navbar height */
+    padding-bottom: 6em; /* Ensure enough spacing above the footer */
+    margin-bottom: 0; /* Remove negative margin to avoid overlap */
+    position: relative; /* Set position to relative for layering */
+    z-index: 2; /* Higher z-index to place it above other sections */
+}
+
+#home img {
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 0.2em; /* Reduced margin for better alignment */
+}
+
+.information-box {
+    margin-top: 0.5em; /* Adjusted margin for better spacing */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2em; /* Reduced gap between elements */
+    max-width: 500px; /* Slightly smaller max width for better fitting */
+}
+
+.information-box h1 {
+    font-size: 3.5em; /* Reduced font size for better fitting */
+    font-weight: 100;
+}
+
+.information-box h3 span {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.information-box h3 {
+    font-size: 0.9em; /* Adjusted font size for better alignment */
+    font-weight: 400;
+}
+
+.information-box p {
+    opacity: 0.7;
+}
+
+.btn-box {
+    display: flex;
+    gap: 2em;
+}
+
+.btn-box .btn:last-of-type:hover {
+    background-color: var(--background);
+    color: white;
+}
+
+.btn-box .btn:last-of-type {
+    background-color: white;
+    color: var(--background);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(120deg, #d500f9, #00e5ff);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(120deg, #00e5ff, #d500f9);
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0; /* Adjust padding for better spacing */
+    background-color: var(--second-background);
+    color: white;
+    opacity: 0.8;
+    font-size: 0.9em;
+    margin-top: 2em; /* Add spacing above the footer */
+}
+
+#about {
+    background-color: var(--second-background);
+    display: flex;
+    flex-wrap: nowrap; /* Allow content to wrap */
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em; /* Reduced gap between elements */
+    padding: 2em 8%; /* Reduced padding for better content fitting */
+    padding-top: 8em; /* Add padding for better spacing */
+    position: relative; /* Set position to relative for layering */
+    z-index: 1; /* Lower z-index to place it below the #home section */
+    margin-top: -5em; /* Negative margin to pull it closer to the #home section */
+}
+
+#about img {
+    width: 25%; /* Reduced image size for better alignment */
+    max-width: 250px; /* Adjusted max width */
+    border-radius: 1em;
+    flex-shrink: 0;
+    margin-right: 1.5em; /* Reduced margin for better spacing */
+    align-self: stretch;
+    object-fit: cover; /* Add margin for spacing */
+}
+
+.about-box {
+    flex: 1;
+    padding: 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-info h1 {
+    font-size: 2.5em; /* Reduced font size for better fitting */
+    margin-bottom: 0.7em;
+    background: linear-gradient(120deg, #d500f9, #00e5ff, #d500f9);
+    background-size: 400%; /* Increased size for smoother animation */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: gradient-move 3s infinite; /* Slower animation for visibility */
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-info h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+}
+
+.about-info p {
+    font-weight: 100;
+    word-wrap: break-word; /* Break long words */
+    word-break: break-word; /* Ensure proper wrapping */
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 2em;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 3em;
+}
+
+
+.skills {
+    text-align: left;
+    gap: 3em;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+}
+
+.skills ul {
+    padding-top: 1em;
+    font-size: 1em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    align-items: flex-start;
+    gap: 0.5em; /* Reduced gap between list items */
+}
+
+.skills ul li {
+    font-size: 1.2em;
+}
+
+.skills ul li span {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    font-size: 1em;
+    padding-top: 0.1em;
+    transition: 0.3s ease-in-out;
+}
+
+.skills ul li span:hover {
+    transform: translateX(10px);
+}
+
+section:last-of-type {
+    padding-bottom: 3em; /* Reduced spacing above the footer */
+}
+
+/* Media query adjustments for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        padding: 1em 5%; /* Reduced padding for smaller screens */
+    }
+
+    #home {
+        gap: 1em; /* Reduced gap for smaller screens */
+    }
+
+    .information-box h1 {
+        font-size: 2.5em; /* Smaller font size for smaller screens */
+    }
+
+    .about-info h1 {
+        font-size: 2em; /* Adjusted font size for smaller screens */
+    }
+
+    .skills {
+        gap: 1.5em; /* Reduced gap for smaller screens */
+    }
+}
+

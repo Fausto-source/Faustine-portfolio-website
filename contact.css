@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 2em 0; /* Consistent padding for uniformity */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Consistent font family */
+}
+
+#contact-section {
+    background-color: var(--background); /* Consistent background color */
+    padding: 16px 0; /* Spacing for the contact section */
+    margin-top: 16px; /* Space above the section */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+h2 {
+    font-size: 2em;
+    color: #333; /* Consistent color for headings */
+    text-align: center;
+    margin-bottom: 16px; /* Space below the heading */
+}
+
+.input-field {
+    width: 100%;
+    max-width: 400px; /* Limit width for input fields */
+    padding: 12px; /* Padding for input fields */
+    margin: 8px 0; /* Spacing between fields */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    font-size: 1em; /* Consistent font size */
+}
+
+.input-field:focus {
+    border-color: #007BFF; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-button {
+    background-color: #007BFF; /* Consistent button color */
+    color: white; /* Text color for button */
+    padding: 12px 20px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Consistent font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.error-message {
+    color: red; /* Error message color */
+    font-size: 0.9em; /* Font size for error messages */
+    margin-top: 8px; /* Space above error message */
+    display: none; /* Hidden by default */
+}
+
+/* Styles for the Contact Me section */
+.contact-me {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 32px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit the width of the section */
+    margin: 0 auto; /* Center the section horizontally */
+    text-align: center; /* Center-align text */
+}
+
+.contact-me h2 {
+    font-size: 2.5em; /* Larger font size for the heading */
+    color: #222; /* Slightly darker color for emphasis */
+    margin-bottom: 24px; /* Add more space below the heading */
+}
+
+.contact-me .input-field {
+    width: 100%; /* Full width for input fields */
+    margin-bottom: 16px; /* Add spacing between input fields */
+}
+
+.contact-me .submit-button {
+    width: 100%; /* Full width for the button */
+    margin-top: 16px; /* Add spacing above the button */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .input-field {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .submit-button {
+        width: 100%; /* Full width for button on small screens */
+    }
+}
+
+/* Responsive design for the Contact Me section */
+@media (max-width: 768px) {
+    .contact-me {
+        padding: 16px; /* Reduce padding for smaller screens */
+    }
+
+    .contact-me h2 {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+}
