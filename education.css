@@ -1,102 +1,102 @@
 body {
     margin: 0;
-    padding: 2em 0; /* Reduced padding to avoid unnecessary space */
+    padding: 2em 0;
     box-sizing: border-box;
 }
 
 #education-section {
     background-color: var(--background);
-    padding: 16px 0; /* Increased padding for better spacing */
-    margin-top: 16px; /* Adjust as needed */
+    padding: 16px 0; 
+    margin-top: 16px; 
     position: relative;
     overflow: auto;
-    scroll-margin-top: 64px; /* Adjust based on the height of your navbar */
-    padding-top: 80px; /* Add space below the navbar */
-    padding-bottom: 80px; /* Add space above the footer */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    min-height: 100vh; /* Ensure the section takes full viewport height */
+    scroll-margin-top: 64px; 
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 #education-section h2 {
     font-size: 2em;
-    color: #333;
+    color: #ffffff;
     text-align: center;
-    margin-top: 16px; /* Space below the navbar */
-    margin-bottom: 16px; /* Reduced space above the container */
+    margin-top: 16px; 
+    margin-bottom: 16px;
 }
 
 .h2 {
   text-align: center;
-  font-size: 2.5em; /* Slightly reduced font size for better balance */
-  padding-top: 0.5em; /* Reduced padding above the header text */
-  margin-bottom: 1em; /* Adjusted spacing below the header */
+  font-size: 2.5em; 
+  padding-top: 0.5em; 
+  margin-bottom: 1em; 
 }  
 
 .education-container {
     width: 100%;
     max-width: 1200px;
-    margin: 16px auto; /* Reduced vertical margin for better spacing */
+    margin: 16px;
     padding: 8px 16px;
     box-sizing: border-box;
     text-align: center;
     position: relative;
     z-index: 1;
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
 
-/* Styling for h2 elements in the education section */
+
 .education-container h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
-    margin-top: 16px; /* Increased space above the heading */
-    margin-bottom: 16px; /* Increased space below the heading */
+    color: #ffffff;
+    margin-top: 16px; 
+    margin-bottom: 16px; 
 }
 
-/* Individual education item styling */
+
 .education-item {
-    background-color: #f9f9f9; /* Light background for contrast */
-    border: 1px solid #ddd; /* Subtle border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 12px; /* Reduced padding for compact design */
-    margin: 12px auto; /* Reduced vertical spacing */
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    max-width: 800px; /* Limit the width of each item */
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px auto; 
+    box-shadow: 0 3px 5px rgba(177, 72, 247, 0.1);
+    max-width: 800px; 
 }
 
 .education-item:hover {
-    transform: translateY(-4px); /* Slightly reduced hover effect */
+    transform: translateY(-4px); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 8px rgba(145, 144, 144, 0.15);
 }
 
-/* Ensure no overlap with navbar */
+
 body {
-    padding-top: 16px; /* Reduced space below the navbar */
-    padding-bottom: 8px; /* Reduced space above the footer */
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
-/* Responsive design for smaller screens */
+
 @media (max-width: 768px) {
     .education-container {
-        padding: 8px; /* Adjusted padding for smaller screens */
-        margin: 8px auto; /* Adjusted vertical spacing */
+        padding: 8px;
+        margin: 8px auto; 
     }
 
     .education-item {
-        padding: 8px; /* Adjusted padding for smaller items */
-        margin-bottom: 9px; /* Adjusted spacing between items */
+        padding: 8px; 
+        margin-bottom: 9px; 
     }
 
     #education-section {
       background-color: var(--background);
-      padding: 2em 1em; /* Adjusted padding for better spacing */
-      margin-top: 4em; /* Added margin to create space below the navbar */
-      margin-bottom: 2em; /* Added margin to create space above the footer */
+      padding: 2em 1em; 
+      margin-top: 4em; 
+      margin-bottom: 2em; 
   }
 }

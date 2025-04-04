@@ -17,14 +17,14 @@ body {
     min-height: 100vh;
     background-color: var(--background);
     padding-top: 3em;
-    padding-bottom: 5em; /* Add padding to account for the footer height */
+    padding-bottom: 5em; 
 }
 
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1em 10%; /* Reduced padding for a more compact navbar */
+    padding: 1em 10%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +33,7 @@ nav {
     z-index: 100;
 }
 
-ul {
+nav ul {
     display: flex;
     align-items: center;
     gap: 3em;
@@ -48,6 +48,14 @@ nav ul a {
 nav ul a:hover {
     opacity: 1;
 }
+
+#menu {
+    color: white;
+    font-size: 3em;
+    display: none;
+    cursor: pointer;
+}
+
 
 .logo {
     font-size: 2em;
@@ -104,9 +112,9 @@ span {
 }
 
 section {
-    height: auto; /* Allow sections to adjust height dynamically */
-    padding: 4% 10%; /* Reduced padding for better content fitting */
-    padding-bottom: 5em; /* Add bottom padding to prevent overlap with footer */
+    height: auto; 
+    padding: 4% 10%; 
+    padding-bottom: 5em; 
 }
 
 #home {
@@ -114,32 +122,32 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1em; /* Reduced gap between elements */
+    gap: 1em; 
     color: white;
-    padding-top: em; /* Add padding to account for the fixed navbar height */
-    padding-bottom: 6em; /* Ensure enough spacing above the footer */
-    margin-bottom: 0; /* Remove negative margin to avoid overlap */
-    position: relative; /* Set position to relative for layering */
-    z-index: 2; /* Higher z-index to place it above other sections */
+    padding-top: em;
+    padding-bottom: 6em; 
+    margin-bottom: 0; 
+    position: relative; 
+    z-index: 2; 
 }
 
 #home img {
     width: 18vw;
     border-radius: 50%;
-    margin-top: 0.2em; /* Reduced margin for better alignment */
+    margin-top: 0.2em; 
 }
 
 .information-box {
-    margin-top: 0.5em; /* Adjusted margin for better spacing */
+    margin-top: 0.5em; 
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 0.2em; /* Reduced gap between elements */
-    max-width: 500px; /* Slightly smaller max width for better fitting */
+    gap: 0.2em; 
+    max-width: 500px; 
 }
 
 .information-box h1 {
-    font-size: 3.5em; /* Reduced font size for better fitting */
+    font-size: 3.5em; 
     font-weight: 100;
 }
 
@@ -149,7 +157,7 @@ section {
 }
 
 .information-box h3 {
-    font-size: 0.9em; /* Adjusted font size for better alignment */
+    font-size: 0.9em; 
     font-weight: 400;
 }
 
@@ -186,39 +194,42 @@ section {
     background: linear-gradient(120deg, #00e5ff, #d500f9);
 }
 
-footer {
-    text-align: center;
-    padding: 2em 0; /* Adjust padding for better spacing */
-    background-color: var(--second-background);
-    color: white;
-    opacity: 0.8;
-    font-size: 0.9em;
-    margin-top: 2em; /* Add spacing above the footer */
-}
-
 #about {
     background-color: var(--second-background);
     display: flex;
-    flex-wrap: nowrap; /* Allow content to wrap */
+    flex-wrap: nowrap; 
     align-items: center;
     justify-content: space-between;
-    gap: 1.5em; /* Reduced gap between elements */
-    padding: 2em 8%; /* Reduced padding for better content fitting */
-    padding-top: 8em; /* Add padding for better spacing */
-    position: relative; /* Set position to relative for layering */
-    z-index: 1; /* Lower z-index to place it below the #home section */
-    margin-top: -5em; /* Negative margin to pull it closer to the #home section */
+    gap: 1.5em; 
+    padding: 2em 8%; 
+    padding-top: 8em; 
+    position: relative; 
+    z-index: 1; 
+    margin-top: -5em; 
+}
+
+.socials {
+    display:block;
+    gap: 0.5em;
+    margin-top: 1em; 
+}
+
+.socials img {
+    width: 10px; 
+    height: 30px; 
+    object-fit: contain;
 }
 
 #about img {
-    width: 25%; /* Reduced image size for better alignment */
-    max-width: 250px; /* Adjusted max width */
+    width: 25%; 
+    max-width: 250px; 
     border-radius: 1em;
     flex-shrink: 0;
-    margin-right: 1.5em; /* Reduced margin for better spacing */
+    margin-right: 1.5em; 
     align-self: stretch;
-    object-fit: cover; /* Add margin for spacing */
+    object-fit: cover; 
 }
+
 
 .about-box {
     flex: 1;
@@ -230,15 +241,15 @@ footer {
 }
 
 .about-info h1 {
-    font-size: 2.5em; /* Reduced font size for better fitting */
+    font-size: 2.5em; 
     margin-bottom: 0.7em;
     background: linear-gradient(120deg, #d500f9, #00e5ff, #d500f9);
-    background-size: 400%; /* Increased size for smoother animation */
+    background-size: 400%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    animation: gradient-move 3s infinite; /* Slower animation for visibility */
+    animation: gradient-move 3s infinite; 
 }
 
 @keyframes gradient-move {
@@ -253,14 +264,14 @@ footer {
 
 @media (max-width: 768px) {
     .about-info h1 {
-        font-size: 2em; /* Smaller font size for smaller screens */
+        font-size: 2em; 
     }
 }
 
 .about-info p {
     font-weight: 100;
-    word-wrap: break-word; /* Break long words */
-    word-break: break-word; /* Ensure proper wrapping */
+    word-wrap: break-word; 
+    word-break: break-word; 
     color: white;
     opacity: 0.8;
     margin-bottom: 2em;
@@ -271,12 +282,6 @@ footer {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
-    gap: 3em;
-}
-
-
-.skills {
     text-align: left;
     gap: 3em;
 }
@@ -297,7 +302,7 @@ footer {
     color: white;
     opacity: 0.8;
     align-items: flex-start;
-    gap: 0.5em; /* Reduced gap between list items */
+    gap: 0.5em;
 }
 
 .skills ul li {
@@ -318,29 +323,38 @@ footer {
 }
 
 section:last-of-type {
-    padding-bottom: 3em; /* Reduced spacing above the footer */
+    padding-bottom: 3em;
 }
 
-/* Media query adjustments for smaller screens */
+
 @media (max-width: 768px) {
     nav {
-        padding: 1em 5%; /* Reduced padding for smaller screens */
+        padding: 1em 5%; 
     }
 
     #home {
-        gap: 1em; /* Reduced gap for smaller screens */
+        gap: 1em;
     }
 
     .information-box h1 {
-        font-size: 2.5em; /* Smaller font size for smaller screens */
+        font-size: 2.5em;
     }
 
     .about-info h1 {
-        font-size: 2em; /* Adjusted font size for smaller screens */
+        font-size: 2em;
     }
 
     .skills {
-        gap: 1.5em; /* Reduced gap for smaller screens */
+        gap: 1em;
     }
 }
 
+footer {
+    text-align: center;
+    padding: 2em 0; 
+    background-color: var(--second-background);
+    color: white;
+    opacity: 0.8;
+    font-size: 0.9em;
+    margin-top: 2em;
+}

@@ -1,36 +1,38 @@
-/* General Section Styling */
 body {
     margin: 0;
-    padding: 5em 0 4em 0; /* Add padding to prevent overlap with navbar and footer */
+    padding: 5em 0 4em 0; 
     box-sizing: border-box;
 }
 
-/* Services Section */
 #services {
     background-color: var(--background);
-    padding: 2em 1em; /* Adjusted padding for better spacing */
-    max-width: 1200px; /* Limit the width for better alignment */
-    margin: 0 auto; /* Center the section */
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto; 
     box-sizing: border-box;
 }
 
-/* Header Styling */
+#services h1{
+    margin-top:1em;
+    margin-bottom: 0.em;
+}
+
 .header {
     text-align: center;
-    font-size: 2.5em; /* Reduced font size for better readability */
-    padding-top: 0.5em;
-    margin-bottom: 1em; /* Add spacing below the header */
+    font-size: 2.5em; 
 }
 
-/* Services Container */
+.h2{
+    margin-top: 0
+}
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 1.5em; /* Increased gap for better spacing */
-    padding: 0 1em; /* Add padding inside the container */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5em;
+    padding-top: 0em;
+    margin-bottom: 0;
 }
 
-/* Service Box Styling */
 .service-box {
     border: 2px solid rgb(49, 49, 49);
     border-radius: 0.8em; 
@@ -47,12 +49,12 @@ body {
     transition: all 0.3s ease-in-out;
     word-wrap: break-word;
     font-size: 0.9em; 
-    background-color: var(--background-light); /* Add background color for better isolation */
+    background-color: var(--background-light); 
 }
 
 .service-box:hover {
     border-color: gray;
-    transform: scale(1.05); /* Add a subtle hover effect */
+    transform: scale(1.05); 
 }
 
 .service-box, .box {
@@ -62,9 +64,10 @@ body {
     justify-content: space-between;
     height: 350px; 
     overflow: hidden;
+    margin-top: 5em;
+    margin-bottom: 7em;
 }
 
-/* Image Styling */
 .services-container img,
 .service-box img {
     max-width: 100%;
@@ -73,7 +76,6 @@ body {
     border-radius: 0.5em;
 }
 
-/* Text Styling */
 .box p {
     margin: 0;
     text-align: center;
@@ -85,7 +87,6 @@ body {
     font-weight: 50;
 }
 
-/* Footer Styling */
 .footer,
 .portfolio-footer {
     display: flex;
@@ -110,7 +111,6 @@ body {
     margin-top: 0; 
 }
 
-/* Footer Links */
 .footer a {
     color: lightblue;
     text-decoration: none;
@@ -122,29 +122,28 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .header {
-        font-size: 2em; /* Adjust header size for smaller screens */
+        font-size: 2em; 
     }
 
     .services-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
-        gap: 1em; /* Reduce gap for smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 1em; 
     }
 
     .service-box {
-        font-size: 0.8em; /* Adjust font size for smaller screens */
-        padding: 0.8em; /* Reduce padding for smaller screens */
+        font-size: 0.8em; 
+        padding: 0.8em; 
     }
 }
 
 @media (max-width: 480px) {
     .header {
-        font-size: 1.8em; /* Further reduce header size */
+        font-size: 1.8em; 
     }
 
     .service-box {
-        min-height: 300px; /* Reduce height for smaller screens */
+        min-height: 300px; 
     }
 }
